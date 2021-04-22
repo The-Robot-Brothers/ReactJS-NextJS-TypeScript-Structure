@@ -1,19 +1,18 @@
 import Head from 'next/head'
 
-import HanokLogo from '../assets/hanok.svg'
+import { Container } from '../styles/pages/Home'
+import RocketseatLogo from '../assets/rocketseat.svg'
 
 const Home: React.FC = () => {
   return (
-    <div>
+    <Container>
       <Head>
         <title>Homepage</title>
       </Head>
 
-      <main>
-        {/* <HanokLogo /> */}
-        <h1>Hello World</h1>
-      </main>
-    </div>
+      <img src={RocketseatLogo} alt="Logo" />
+      <h1>Hello World</h1>
+    </Container>
   )
 }
 
